@@ -1,7 +1,20 @@
 import React from "react";
 
 import Icon from "./icon";
-import styles from "./styles";
+
+const classes = {
+	alert: 'alert',
+	msgContainer: 'alert__msg-container',
+	dismissable: 'alert_dismissable',
+	info: 'alert_info',
+	success: 'alert_success',
+	warning: 'alert_warning',
+	danger: 'alert_danger',
+	close: 'alert_close',
+	icon: 'alert__icon',
+	headline: 'alert__headline',
+	body: 'alert__body',
+}
 
 const Alert = ({
 	type = "info",
@@ -9,7 +22,6 @@ const Alert = ({
 	headline,
 	onDismiss,
 	dismissTitle = "Dismiss",
-	sheet: { classes },
 	showIcon = true
 }) => {
 	const isDismissable = !!onDismiss;
@@ -42,4 +54,4 @@ const Alert = ({
 	);
 };
 
-export default styles(Alert);
+export default Alert;
