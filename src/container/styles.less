@@ -2,11 +2,11 @@
 
 .alert-container {
 	position: fixed;
-	paddingTop: @padding-base-vertical;
-	paddingRight: @padding-base-horizontal;
-	paddingBottom: @padding-base-vertical;
-	paddingLeft: @padding-base-horizontal;
-	zIndex: @zindex-navbar-fixed + 1;
+	padding-top: @padding-base-vertical;
+	padding-right: @padding-base-horizontal;
+	padding-bottom: @padding-base-vertical;
+	padding-left: @padding-base-horizontal;
+	z-index: @zindex-navbar-fixed + 1;
 
 	&_top-right {
 		top: 0;
@@ -32,7 +32,7 @@
 
 	&_enter {
 		opacity: 0.01;
-		transform: translateX(-25%);
+		transform: translate-x(-25%);
 		maxHeight: 0;
 		overflow: hidden;
 		transition: .25s ease-in;
@@ -40,21 +40,21 @@
 
 	&_enter-active {
 		opacity: 1;
-		transform: translateX(0);
-		maxHeight: @alert-magical-max-height;
+		transform: translate-x(0);
+		max-height: @alert-magical-max-height;
 	}
 
 	&_leave {
-		opacity: 1,
-		transform: translateX(0);
-		maxHeight: @alert-magical-max-height;
+		opacity: 1;
+		transform: translate-x(0);
+		max-height: @alert-magical-max-height;
 		overflow: hidden;
 		transition: .25s ease-out;
 	}
 
 	&_leave-active {
 		opacity: 0.01;
-		transform: translateX(25%);
-		maxHeight: 0;
+		transform: translate-x(25%);
+		max-height: 0;
 	}
 }

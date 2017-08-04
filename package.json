@@ -6,11 +6,11 @@
     "react-component",
     "react",
     "growl",
-    "toaster",
     "notifier",
     "notifications",
     "bootstrap",
-    "alerts"
+    "alerts",
+    "less"
   ],
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -23,14 +23,14 @@
     "compile": "npm run compile-cjs && npm run compile-es",
     "build": "webpack --progress --bail",
     "lint": "eslint src docs --ext=js,jsx",
-    "prepublish": "npm run lint && npm run compile"
+    "prepublish": "npm run lint; npm run compile"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Harut/react-bs-notifier"
+    "url": "https://github.com/Harut/react-bs-notifier-less"
   },
   "bugs": {
-    "url": "https://github.com/Harut/react-bs-notifier/issues"
+    "url": "https://github.com/Harut/react-bs-notifier-less/issues"
   },
   "dependencies": {
     "prop-types": "^15.5.8",
