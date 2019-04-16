@@ -1,6 +1,6 @@
 {
   "name": "react-bs-notifier-less",
-  "version": "4.3.3",
+  "version": "4.3.4",
   "description": "A react component to show growl-like notifications using bootstrap alerts",
   "keywords": [
     "react-component",
