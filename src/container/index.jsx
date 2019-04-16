@@ -1,6 +1,6 @@
 import React from "react";
 import * as t from "prop-types";
-import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import ReactCSSTransitionGroup from "react-transition-group/TransitionGroup";
 
 // import "./styles.less";
 
