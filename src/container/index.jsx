@@ -1,6 +1,6 @@
 import React from "react";
 import * as t from "prop-types";
-import ReactCSSTransitionGroup from "react-transition-group/TransitionGroup";
+import TransitionGroup  from "react-transition-group/TransitionGroup";
 
 // import "./styles.less";
 
@@ -13,10 +13,6 @@ const classes = {
 	"top-left": "alert-container_top-left",
 	"bottom-right": "alert-container_bottom-right",
 	"bottom-left": "alert-container_bottom-left",
-	enter: "alert-container_enter",
-	enterActive: "alert-container_enterActive",
-	leave: "alert-container_leave",
-	leaveActive: "alert-container_leaveActive"
 };
 
 const AlertContainer = ({
@@ -25,13 +21,9 @@ const AlertContainer = ({
 }) => {
 	return (
 		<div className={`${classes.container} ${classes[position]}`}>
-			<ReactCSSTransitionGroup
-				transitionName={classes}
-				transitionEnterTimeout={ENTER_TIMEOUT}
-				transitionLeaveTimeout={EXIT_TIMEOUT}
-			>
+			<TransitionGroup>
 				{children}
-			</ReactCSSTransitionGroup>
+			</TransitionGroup>
 		</div>
 	);
 };

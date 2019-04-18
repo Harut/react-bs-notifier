@@ -1,6 +1,6 @@
 {
   "name": "react-bs-notifier-less",
-  "version": "4.3.4",
+  "version": "4.4.0",
   "description": "A react component to show growl-like notifications using bootstrap alerts",
   "keywords": [
     "react-component",
@@ -34,13 +34,13 @@
   },
   "dependencies": {
     "prop-types": "^15.5.8",
-    "react-addons-css-transition-group": "^15.6.2",
-    "react-transition-group": "^2.3.0"
+    "react-transition-group": "^4.0.0"
   },
   "peerDependencies": {
     "react": ">=0.14 <16"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "babel-cli": "6.x",
     "babel-loader": "6.x",
     "babel-plugin-transform-export-extensions": "6.x",
